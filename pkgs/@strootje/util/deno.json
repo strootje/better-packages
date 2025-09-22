@@ -1,0 +1,14 @@
+{
+  "name": "@strootje/util",
+  "license": "GPL-2.0",
+  "version": "0.1.0",
+
+  "exports": {
+    "./mapper": "./mod.mapper.ts",
+    "./schema": "./mod.schema.ts"
+  },
+  "imports": {
+    "@standard-schema/spec": "npm:@standard-schema/spec@^1.0.0",
+    "neverthrow": "npm:neverthrow@^8.2.0"
+  }
+}

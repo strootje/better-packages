@@ -1,0 +1,33 @@
+{
+  "version": "5",
+  "specifiers": {
+    "npm:@standard-schema/spec@1": "1.0.0",
+    "npm:neverthrow@^8.2.0": "8.2.0"
+  },
+  "npm": {
+    "@rollup/rollup-linux-x64-gnu@4.51.0": {
+      "integrity": "sha512-4YHhP+Rv3T3+H3TPbUvWOw5tuSwhrVhkHHZhk4hC9VXeAOKR26/IsUAT4FsB4mT+kfIdxxb1BezQDEg/voPO8A==",
+      "os": ["linux"],
+      "cpu": ["x64"]
+    },
+    "@standard-schema/spec@1.0.0": {
+      "integrity": "sha512-m2bOd0f2RT9k8QJx1JN85cZYyH1RqFBdlwtkSlf4tBDYLCiiZnv1fIIwacK6cqwXavOydf0NPToMQgpKq+dVlA=="
+    },
+    "neverthrow@8.2.0": {
+      "integrity": "sha512-kOCT/1MCPAxY5iUV3wytNFUMUolzuwd/VF/1KCx7kf6CutrOsTie+84zTGTpgQycjvfLdBBdvBvFLqFD2c0wkQ==",
+      "optionalDependencies": [
+        "@rollup/rollup-linux-x64-gnu"
+      ]
+    }
+  },
+  "workspace": {
+    "members": {
+      "pkgs/@strootje/util": {
+        "dependencies": [
+          "npm:@standard-schema/spec@1",
+          "npm:neverthrow@^8.2.0"
+        ]
+      }
+    }
+  }
+}

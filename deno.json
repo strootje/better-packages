@@ -1,0 +1,6 @@
+{
+  "workspace": ["./pkgs/**"],
+  "fmt": {
+    "lineWidth": 120
+  }
+}
